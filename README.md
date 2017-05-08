@@ -3,7 +3,7 @@ A mutiple dropdown vue component in mobile
 
 This component is work in vue-webpack environment.
 
-[Demo](http://github.io/lavyun/vue-muti-dropdown)
+[Demo](http://lavyun.github.io/vue-muti-dropdown)
 
 <br>
 
