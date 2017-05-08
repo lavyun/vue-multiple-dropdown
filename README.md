@@ -5,7 +5,9 @@ This component is work in vue-webpack environment.
 
 [Demo](http://github.io/lavyun/vue-muti-dropdown)
 
-#### Usage
+<br>
+
+### Usage
 
 First, install with npm.
 
@@ -36,7 +38,9 @@ Use it.
 </muti-dropdown>
 ```
 
-#### Props
+<br>
+
+### Props
 
 `title: String`:
 
@@ -54,7 +58,9 @@ The selected-icon's className, expected String, has default value.
 
 Two way binding with the list prop.
 
-#### The demo's code
+<br>
+
+### The demo's code
 
 ```html
 <template>
@@ -100,7 +106,9 @@ Two way binding with the list prop.
 </style>
 ```
 
-#### LICENCE
+<br>
+
+### LICENCE
 MIT
 
 
