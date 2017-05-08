@@ -1,9 +1,8 @@
 {
   "name": "vue-mutiple-dropdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mutiple dropdown component",
   "author": "github.com/lavyun",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
