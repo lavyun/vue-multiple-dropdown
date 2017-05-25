@@ -4,22 +4,22 @@
     <p>value1:{{value1}}</p>
     <p>value2:{{value2}}</p>
     <p>value3:{{value3}}</p>
-    <muti-dropdown>
-      <muti-dropdown-item title="时间" :list="list1" v-model="value1"></muti-dropdown-item>
-      <muti-dropdown-item title="地点" :list="list2" v-model="value2" icon-class="iconfont icon-danxuanon"></muti-dropdown-item>
-      <muti-dropdown-item title="人物" :list="list3" v-model="value3"></muti-dropdown-item>
-    </muti-dropdown>
+    <multi-dropdown>
+      <multi-dropdown-item title="时间" :list="list1" v-model="value1"></multi-dropdown-item>
+      <multi-dropdown-item title="地点" :list="list2" v-model="value2" icon-class="iconfont icon-danxuanon"></multi-dropdown-item>
+      <multi-dropdown-item title="人物" :list="list3" v-model="value3"></multi-dropdown-item>
+    </multi-dropdown>
   </div>
 </template>
 
 <script>
-  import {MutiDropdown, MutiDropdownItem} from 'vue-muti-dropdown'
+  import {MultiDropdown, MultiDropdownItem} from 'vue-multiple-dropdown'
 
   export default {
     name: 'app',
     components: {
-      MutiDropdown,
-      MutiDropdownItem
+      MultiDropdown,
+      MultiDropdownItem
     },
     data(){
       return {

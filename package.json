@@ -1,7 +1,7 @@
 {
-  "name": "vue-mutiple-dropdown",
-  "version": "1.0.1",
-  "description": "A mutiple dropdown component",
+  "name": "vue-multiple-dropdown",
+  "version": "1.0.0",
+  "description": "A multiple dropdown component",
   "author": "github.com/lavyun",
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -12,7 +12,7 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "vue": "^2.2.6",
-    "vue-muti-dropdown": "^1.0.0"
+    "vue-multiple-dropdown": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

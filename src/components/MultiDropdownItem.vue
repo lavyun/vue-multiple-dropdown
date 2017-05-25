@@ -1,11 +1,11 @@
 <template>
-  <div muti-dropdown class="mutiple-dropdown-item" :style="{width: itemWidth}">
-    <div class="mutiple-dropdown-item-wrap">
+  <div multi-dropdown class="multiple-dropdown-item" :style="{width: itemWidth}">
+    <div class="multiple-dropdown-item-wrap">
       <p class="md-title" @click="change">
         <span>{{title}}</span>
         <span class="iconfont icon-moreunfold" :class="{arrowToggle: show}"></span>
       </p>
-      <ul muti-dropdown-list class="md-list" v-show="show" :style="{width: listWidth}">
+      <ul multi-dropdown-list class="md-list" v-show="show" :style="{width: listWidth}">
         <li class="md-list-item" v-for="(item, index) in list" @click="select(index)">
           <p v-text="item"></p>
           <div class="md-list-icon-wrap" v-show="index === itemIndex">
@@ -25,6 +25,10 @@
       iconClass:{
         type: String,
         default: 'iconfont icon-selected'
+      },
+      autoClose: {
+        type: Boolean,
+        default: true
       },
       list: {
         // Expected list is a Array of String and Number
@@ -55,7 +59,7 @@
     },
     mounted(){
       var parent = this.$el.parentNode;
-      var items = parent.querySelectorAll('[muti-dropdown]');
+      var items = parent.querySelectorAll('[multi-dropdown]');
       var itemsLength = items.length;
       this.itemWidth = 100 / itemsLength + '%';
       items[itemsLength - 1].style.border = "none";   // 最后一个item没有边框
@@ -77,6 +81,11 @@
       },
       select(index){
          this.itemIndex = index;
+         if(this.autoClose) {
+           setTimeout(()=>{
+             this.show = false;
+           }, 100)
+         }
          this.$emit('input',this.list[index]);
       }
     }

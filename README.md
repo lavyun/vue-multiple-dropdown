@@ -1,9 +1,9 @@
-A mutiple dropdown vue component in mobile
+A multiple dropdown vue component in mobile
 ---
 
 This component is work in vue-webpack environment.
 
-[Demo](http://lavyun.github.io/vue-muti-dropdown)
+[Demo](http://lavyun.github.io/vue-multi-dropdown)
 
 <br>
 
@@ -12,30 +12,30 @@ This component is work in vue-webpack environment.
 First, install with npm.
 
 ```js
-npm install vue-muti-dropdown
+npm install vue-multi-dropdown
 ```
 
 Then, import it in your project
 
 ```js
-import {MutiDropdown, MutiDropdownItem} from 'vue-muti-dropdown'
+import {MultiDropdown, MultiDropdownItem} from 'vue-multi-dropdown'
 ```
 
 Register components.
 ```js
 components: {
-	MutiDropdown,
-	MutiDropdownItem
+	MultiDropdown,
+	MultiDropdownItem
 },
 ```
 
 Use it.
 ```js
-<muti-dropdown>
-	<muti-dropdown-item title="时间" :list="list1" v-model="value1"></muti-dropdown-item>
-	<muti-dropdown-item title="地点" :list="list2" v-model="value2"></muti-dropdown-item>
-	<muti-dropdown-item title="人物" :list="list3" v-model="value3"></muti-dropdown-item>
-</muti-dropdown>
+<multi-dropdown>
+	<multi-dropdown-item title="时间" :list="list1" v-model="value1"></multi-dropdown-item>
+	<multi-dropdown-item title="地点" :list="list2" v-model="value2"></multi-dropdown-item>
+	<multi-dropdown-item title="人物" :list="list3" v-model="value3"></multi-dropdown-item>
+</multi-dropdown>
 ```
 
 <br>
@@ -69,22 +69,22 @@ Two way binding with the list prop.
     <p>value1:{{value1}}</p>
     <p>value2:{{value2}}</p>
     <p>value3:{{value3}}</p>
-    <muti-dropdown>
-      <muti-dropdown-item title="时间" :list="list1" v-model="value1"></muti-dropdown-item>
-      <muti-dropdown-item title="地点" :list="list2" v-model="value2" icon-class="iconfont icon-danxuanon"></muti-dropdown-item>
-      <muti-dropdown-item title="人物" :list="list3" v-model="value3"></muti-dropdown-item>
-    </muti-dropdown>
+    <multi-dropdown>
+      <multi-dropdown-item title="时间" :list="list1" v-model="value1"></multi-dropdown-item>
+      <multi-dropdown-item title="地点" :list="list2" v-model="value2" icon-class="iconfont icon-danxuanon"></multi-dropdown-item>
+      <multi-dropdown-item title="人物" :list="list3" v-model="value3"></multi-dropdown-item>
+    </multi-dropdown>
   </div>
 </template>
 
 <script>
-  import {MutiDropdown, MutiDropdownItem} from 'vue-muti-dropdown'
+  import {MultiDropdown, MultiDropdownItem} from 'vue-multi-dropdown'
 
   export default {
     name: 'app',
     components: {
-      MutiDropdown,
-      MutiDropdownItem
+      MultiDropdown,
+      MultiDropdownItem
     },
     data(){
       return {
